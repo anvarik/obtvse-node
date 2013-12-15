@@ -3,7 +3,7 @@ nodeblog
 [Obtvse](http://github.com/NateW/obtvse) nodejs implementation. 
 
 ## About
-[Obtvse] (https://github.com/natew/obtvse) is developed by @natew with Ruby&Rails. 
+[Obtvse] (https://github.com/natew/obtvse) is developed by [@natew](https://github.com/natew) with Ruby&Rails. 
 I am not familiar with Ruby&Rails and I thought it is a good opportunity to make it work with nodejs. [@gorekee](https://github.com/gorekee) has already [started](https://github.com/gorekee/obtvse-node.js) and he 
 is currently busy to continue. I asked his permission, and will be copying his code and rewriting most of it to create a full nodejs implementation.
 

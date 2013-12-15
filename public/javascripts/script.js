@@ -1,20 +1,20 @@
 // Allows for auto expanding textareas
 function makeExpandingArea(container) {
     var area = container.querySelector('textarea'),
-        span = container.querySelector('span');
+            span = container.querySelector('span');
 
     if (!area) {
         return;
     }
 
     if (area.addEventListener) {
-        area.addEventListener('input', function () {
+        area.addEventListener('input', function() {
             span.textContent = area.value;
         }, false);
         span.textContent = area.value;
     } else if (area.attachEvent) {
         // IE8 compatibility
-        area.attachEvent('onpropertychange', function () {
+        area.attachEvent('onpropertychange', function() {
             span.innerText = area.value;
         });
         span.innerText = area.value;
@@ -37,7 +37,7 @@ function getCaret(el) {
         }
 
         var re = el.createTextRange(),
-            rc = re.duplicate();
+                rc = re.duplicate();
         re.moveToBookmark(r.getBookmark());
         rc.setEndPoint('EndToStart', re);
 
@@ -46,10 +46,10 @@ function getCaret(el) {
     return 0;
 }
 
-$(function () {
+$(function() {
     // Auto-expanding height for editor textareas
     var title = document.getElementById('text-title'),
-        content = document.getElementById('text-content');
+            content = document.getElementById('text-content');
 
     // If we're on the edit page
     if (title) {
@@ -58,9 +58,9 @@ $(function () {
         makeExpandingArea(content);
 
         // Scroll window if we edit long posts
-        $('#post_content').bind('keyup', function () {
+        $('#post_content').bind('keyup', function() {
             var $this = $(this),
-                bottom = $this.offset().top + $this.height();
+                    bottom = $this.offset().top + $this.height();
 
             if (bottom > $(window).scrollTop() && $this.prop("selectionStart") > ($this.val().length - $this.val().split('\n').slice(-1)[0].length)) {
                 $(window).scrollTop(bottom);
@@ -83,7 +83,7 @@ $(function () {
         // document.getElementById('preview-button').onclick = function () {
         //     form.target = '_blank';
         // }
-        document.getElementById('save-button').onclick = function () {
+        document.getElementById('save-button').onclick = function() {
             form.target = '_self';
         }
 
