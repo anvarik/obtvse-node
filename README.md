@@ -9,8 +9,8 @@ is currently busy to continue. I asked his permission, and will be copying his c
 
 ## Configuration
 Set MySql database and login information into the config.json under user/password.
-Set Admin module login information under login.user/login.password.
-Then run `node app.js` in order to start the server.
+Set Admin module login information under login.user/login.password. 
+First run `npm install` for dependencies, then run `node app.js` in order to start the server.
 
 ## Screenshots
 ![Admin](http://i.imgur.com/hfnm9.png)
