@@ -33,15 +33,15 @@ Listening on port: 3000
 
 ## Screenshots
 This is the window where user have work in progress and completed ideas. If you come up with a new idea, you save it as a draft, and it will be located on the left side of the window. You can modify them whenever you want, and when you think they are ready, you can post them. Posted ones appear on the right:
-![Drafts](http://imgur.com/ValJNob)
+![Drafts](http://i.imgur.com/ValJNob.png)
 
 
 Here you write your post: 
-![Post](http://imgur.com/1oaUg5d)
+![Post](http://i.imgur.com/1oaUg5d.png)
 
 
 Here how your main page looks like:
-![Mainpage](http://imgur.com/i5oywWM)
+![Mainpage](http://i.imgur.com/i5oywWM.png)
 
 
 Note: Not working with the new updates of Jade and Express
