@@ -11,11 +11,11 @@ var app = module.exports = h5bp.server(express, {
     'root': './public'
 });
 app.configure(function() {
-    app.set('views', __dirname + '/views');
-    app.set('view engine', 'jade');
+    app.set('views', __dirname + '/views'); // where view files are
+    app.set('view engine', 'jade'); // jade
     app.use(express.bodyParser());
     app.use(express.methodOverride());
-    app.use(express.cookieParser());
+    app.use(express.cookieParser()); // cookie and session are for session tracking
     app.use(express.session({secret: '#Thij`YVv2OEz8UcqX'}));
     app.use(app.router);
     app.use(express.static(__dirname + '/public'));
