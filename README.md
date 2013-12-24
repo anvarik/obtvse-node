@@ -1,4 +1,4 @@
-nodeblog
+obtvse-node
 ========
 [Obtvse](http://github.com/NateW/obtvse) nodejs implementation. 
 
