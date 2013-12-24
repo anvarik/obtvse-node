@@ -3,12 +3,11 @@ nodeblog
 [Obtvse](http://github.com/NateW/obtvse) nodejs implementation. 
 
 ## About
-[Obtvse] (https://github.com/natew/obtvse) is developed by [@natew](https://github.com/natew) with Ruby&Rails.  
-I am trying to convert it to nodejs.
+[Obtvse] (https://github.com/natew/obtvse) is developed by [@natew](https://github.com/natew) with Ruby&Rails. I am trying to convert it to nodejs with the help of @gorekee.
 
 ## Configuration
 Configuration file is `config.json`. It looks as following:
-
+```
   {
       "user": "mysql_username",
       "password": "mysql_password",
@@ -24,17 +23,18 @@ Configuration file is `config.json`. It looks as following:
           "password": "obvtse_admin_password"
       }
   }
+```
+`user` - `password` are your database credentials (for now only mysql), `DB` is the database name, some table names are `TABLE_*`,`PORT` is the port your node server is running, `postPerPage` is the number of blog posts to be displayed on a page, `login.user` and `login.password` are the credentials that you will need to access to the blog administration.
 
-`user` & `password` are your database username & password. `DB` is the database that you will store your blog posts. Web site content
-is stored in `TABLE_*`. `PORT` is the port your node server is running. `postPerPage` is modifiable as well. Finally set your admin login and password.
-
-Set MySql database and login information into the config.json under user/password.
-Set Admin module login information under login.user/login.password. 
-First run `npm install` for dependencies, then run `node app.js` in order to start the server.
+First to run `npm install` for dependencies, then run `node app.js`. You should see on your console:
+```
+Listening on port: 3000
+```
 
 ## Screenshots
 ![Admin](http://i.imgur.com/hfnm9.png)
 ![Draft](http://i.imgur.com/x4lXL.png)
 ![Live](http://i.imgur.com/wbVJN.png)
 
-Note: Not working with the bew updates of Jade and Express!
+
+Note: Not working with the new updates of Jade and Express
