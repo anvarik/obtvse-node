@@ -1,6 +1,6 @@
 {
-    "user": "mysql_username",
-    "password": "mysql_password",
+    "user": "root",
+    "password": "1234",
     "DB": "alboh_blog",
     "TABLE_POST": "posts",
     "TABLE_PUBLISH": "publish",
@@ -9,7 +9,7 @@
     "env": "dev",
     "postPerPage": 10,
     "login": {
-        "user": "obtvse_admin_username",
-        "password": "obvtse_admin_password"
+        "user": "admin",
+        "password": "1234"
     }
 }
