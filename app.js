@@ -48,6 +48,6 @@ app.get('/admin', secure, admin.index);
 app.get('/admin/login', admin.login);
 app.get('/admin/logout', admin.logout);
 app.post('/admin/login', admin.postLoginData);
-app.listen(abstractModel.storageConfig.PORT);
 
+app.listen(abstractModel.storageConfig.PORT);
 console.log('Listening on port: ' + abstractModel.storageConfig.PORT);
