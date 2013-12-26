@@ -4,7 +4,7 @@ var express = require('express'),
         posts = require('./lib/controllers/posts'),
         admin = require('./lib/controllers/admin'),
         h5bp = require('./lib/externals/h5bp-node'),
-        abstractModel = require('./lib/models/options');
+        options = require('./lib/models/options');
 
 // Webserver configuration https://github.com/h5bp/server-configs
 var app = module.exports = h5bp.server(express, {
@@ -21,7 +21,7 @@ app.configure(function() {
     app.use(express.static(__dirname + '/public'));
 });
 // set env
-app.settings.env = abstractModel.storageConfig.env;
+app.settings.env = options.storageConfig.env;
 
 app.configure('dev', function() {
     app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
@@ -49,5 +49,5 @@ app.get('/admin/login', admin.login);
 app.get('/admin/logout', admin.logout);
 app.post('/admin/login', admin.postLoginData);
 
-app.listen(abstractModel.storageConfig.PORT);
-console.log('Listening on port: ' + abstractModel.storageConfig.PORT);
+app.listen(options.storageConfig.PORT);
+console.log('Listening on port: ' + options.storageConfig.PORT);
