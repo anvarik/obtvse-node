@@ -217,7 +217,7 @@ h5 {
     font-weight: 900;word-wrap:break-word;line-height:1.3em
 }
 h1 {
-    font-weight: 900;font-size:26px
+    font-weight: 900
 }
 #text-title input,
 #text-title textarea,
@@ -265,8 +265,11 @@ header li a:hover {
 #content section {
     padding: 26px 0 40px 50px;border-bottom:1px solid #ddd;position:relative
 }
-#content h1.aside {
-   // font-size: 18px
+#content h1.aside p{
+    font-size: 24px
+}
+#content h1.aside p:hover{
+    color:red
 }
 .show #content section {
     border-bottom: none

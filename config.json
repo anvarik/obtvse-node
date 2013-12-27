@@ -1,7 +1,7 @@
 {
-    "user": "root",
+    "user": "postgres",
     "password": "1234",
-    "database": "mysql",
+    "database": "postgres",
     "DB": "dev_test",
     "TABLE_POST": "dev_posts",
     "TABLE_PUBLISH": "publish",
