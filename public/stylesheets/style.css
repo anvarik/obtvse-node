@@ -69,7 +69,7 @@ strong {
     font-weight: bold
 }
 blockquote {
-    margin: 1em;padding:0 30px;border-left:8px solid lightblue
+    margin: 1em;padding:0 30px;border-left:8px solid red
 }
 dfn {
     font-style: italic
@@ -266,7 +266,7 @@ header li a:hover {
     padding: 26px 0 40px 50px;border-bottom:1px solid #ddd;position:relative
 }
 #content h1.aside {
-    font-size: 18px
+   // font-size: 18px
 }
 .show #content section {
     border-bottom: none
