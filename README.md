@@ -8,25 +8,37 @@ dev-obtvse-node
 ## Configuration
 Configuration file is `config.json`. It looks as following:
 ```
-  {
-      "user": "mysql_username",
-      "password": "mysql_password",
-      "DB": "mysql_db_name", 
-      "TABLE_POST": "posts",
-      "TABLE_PUBLISH": "publish",
-      "TABLE_COMMENT": "comment",
-      "PORT": "3000",
-      "env": "dev",
-      "postPerPage": 10,
-      "login": {
-          "user": "obtvse_admin_username",
-          "password": "obvtse_admin_password"
-      }
-  }
+{
+    "database": "mysql",  ( mysql | postgre | herokupg )    
+    "user": "root",
+    "password": "1234",
+    "DB": "dev_test",
+    "TABLE_POST": "dev_posts",
+    "HOST":"localhost",
+    "PORT": "3000",
+    "env": "dev",
+    "postPerPage": 10,
+    "login": {
+        "user": "admin",
+        "password": "1234"
+    }
+}
+
 ```
-`user` - `password` are your database credentials (for now only mysql), `DB` is the database name, some table names are `TABLE_*`,`PORT` is the port your node server is running, `postPerPage` is the number of blog posts to be displayed on a page, `login.user` and `login.password` are the credentials that you will need to access to the blog administration.
+You can either run this on your own server, or use heroku. For now there are only two options: mysql and postgre. 
+You need to modify `config.json` accordingly. If you want to run your own server `database` must be either 
+`mysql` or `postgre`; and for heroku it must be `herokupg`.
+
+`user` - `password` are your database credentials, 
+`DB` is the database name(if you run your own server you can modify it, if you run heroku however, it will be given to you), 
+`TABLE_POST` is the table name in your database, 
+`HOST` is the address your server running (i.e. localhost if you run on local) or if you prefer to run on heroku it will be given, 
+`PORT` is the port that this application will be running, note that it is not database port. MySql and Postgre ports are hardcoded by default, 5432 and 3306
+`postPerPage` is the number of blog posts to be displayed on a page, 
+`login.user` and `login.password` are the credentials that you will need to access to the blog administration.
 
 First run `npm install` for dependencies, then run `node app.js`. You should see on your console:
+
 ```
 Listening on port: 3000
 ```
